@@ -113,7 +113,7 @@ public class CheckNumView extends RelativeLayout {
         lp.addRule(RelativeLayout.CENTER_HORIZONTAL, RelativeLayout.TRUE);
         lp.addRule(RelativeLayout.CENTER_VERTICAL, RelativeLayout.TRUE);
         lp.addRule(RelativeLayout.LEFT_OF, unitView.getId());
-        lp.rightMargin = 15;
+        lp.rightMargin = 20;
         relayout.addView(scrollView, lp);
         relayout.setGravity(Gravity.CENTER);
         addView(relayout);
