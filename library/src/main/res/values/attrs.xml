@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <declare-styleable name="WheelView">
+        <!-- 焦点背景 -->
+        <attr name = "focusBackground" format="reference" />
+        <!-- 按钮背景 -->
+        <attr name = "buttonBackground" format="reference" />
+        <!-- 按钮文字大小 -->
+        <attr name = "buttonTextSize" format="dimension" />
+        <!-- 按钮文字颜色 -->
+        <attr name = "buttonTextColor" format="color" />
+        <!-- 按钮是否显示 -->
+        <attr name = "buttonVisible" format="boolean" />
+        <!-- 行高 -->
+        <attr name = "rowHeight" format="dimension" />
+    </declare-styleable>  
+    
+</resources>
