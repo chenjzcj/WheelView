@@ -20,11 +20,14 @@ import android.widget.RelativeLayout;
  */
 public class WheelView extends RelativeLayout {
     /**
-     * 默认年和月
+     * 默认年,月,日
      */
     public static String[] DEFAULT_YEARS = {"2012", "2013", "2014", "2015", "2016", "2017", "2018", "2019", "2020", "2021", "2022", "2023", "2024", "2025"};
-
     public static String[] DEFAULT_MONTHS = {"01", "02", "03", "04", "05", "06", "07", "08", "09", "10", "11", "12"};
+    public static String[] DEFAULT_DAYS = {
+            "01", "02", "03", "04", "05", "06", "07", "08", "09", "10", "11", "12",
+            "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "24",
+            "25", "26", "27", "28", "29", "30", "31"};
     /**
      * 中间位置图片背景
      */
@@ -48,7 +51,9 @@ public class WheelView extends RelativeLayout {
         focusBackground = a.getResourceId(R.styleable.WheelView_focusBackground, 0);
         buttonBackground = a.getResourceId(R.styleable.WheelView_buttonBackground, 0);
         buttonTextColor = a.getColor(R.styleable.WheelView_buttonTextColor, Color.WHITE);
+        //因为getDimension方法会自动将sp转成dp，所以再将其转成sp
         buttonTextSize = a.getDimension(R.styleable.WheelView_buttonTextSize, 10);
+        buttonTextSize = px2sp(buttonTextSize);
         rowHeight = (int) a.getDimension(R.styleable.WheelView_rowHeight, 20);
         buttonVisible = a.getBoolean(R.styleable.WheelView_buttonVisible, true);
         a.recycle();
@@ -82,7 +87,7 @@ public class WheelView extends RelativeLayout {
         Button btn = new Button(context);
         btn.setTextColor(buttonTextColor);
         btn.setTextSize(buttonTextSize);
-        btn.setText("确定");
+        btn.setText(R.string.ok);
         btn.setBackgroundResource(buttonBackground);
         btn.setGravity(Gravity.CENTER);
         btn.setOnClickListener(new OnClickListener() {
@@ -138,5 +143,10 @@ public class WheelView extends RelativeLayout {
          * @param values 选择器对应值数组
          */
         void onclick(String[] values);
+    }
+
+    public int px2sp(final float pxValue) {
+        final float fontScale = getContext().getResources().getDisplayMetrics().scaledDensity;
+        return (int) (pxValue / fontScale + 0.5f);
     }
 }

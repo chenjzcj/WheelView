@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">library</string>
+    <string name="ok">确定</string>
 </resources>
