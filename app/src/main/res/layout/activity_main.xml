@@ -10,10 +10,10 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
-        android:background="@drawable/act_menu_bg_hover"
+        android:background="@drawable/wheel_view_bg"
         app:buttonBackground="@drawable/btn_selecter"
         app:buttonTextSize="12sp"
-        app:focusBackground="@drawable/shoukuan_border4"
+        app:focusBackground="@drawable/focus_bg"
         app:rowHeight="50dp" />
 
 </RelativeLayout>
