@@ -1,45 +1,45 @@
 package com.suk.library;
 
 /**
- * è½®å­
+ * ÂÖ×Ó
  *
  * @author Felix.Zhong
  */
 public class Wheel {
     /**
-     * å†…å®¹
+     * ÄÚÈİ
      */
     private String[] texts;
     /**
-     * å•ä½
+     * µ¥Î»
      */
     private String unit;
     /**
-     * ç„¦ç‚¹æ–‡å­—
+     * ½¹µãÎÄ×Ö
      */
     private String focusText;
     /**
-     * ç„¦ç‚¹æ–‡å­—é¢œè‰²
+     * ½¹µãÎÄ×ÖÑÕÉ«
      */
     private int focusTextColor;
     /**
-     * éç„¦ç‚¹æ–‡å­—é¢œè‰²
+     *·Ç½¹µãÎÄ×ÖÑÕÉ«
      */
     private int optionTextColor;
     /**
-     * å•ä½é¢œè‰²
+     * µ¥Î»ÑÕÉ«
      */
     private int unitTextColor;
     /**
-     * ç„¦ç‚¹å­—ä½“å¤§å°
+     * ½¹µã×ÖÌå´óĞ¡
      */
     private int focusTextsize;
     /**
-     * éç„¦ç‚¹å­—ä½“å¤§å°
+     *·Ç½¹µãÎÄ×ÖÑÕÉ«
      */
     private int optionTextsize;
     /**
-     * å•ä½å­—ä½“å¤§å°
+     * µ¥Î»×ÖÌå´óĞ¡
      */
     private int unitTextsize;
 

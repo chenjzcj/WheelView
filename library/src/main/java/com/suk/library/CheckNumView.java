@@ -13,8 +13,6 @@ import android.widget.TextView;
 import java.util.Random;
 
 /**
- * 数字选择器
- *
  * @author Felix.Zhong
  */
 public class CheckNumView extends RelativeLayout {
@@ -56,7 +54,7 @@ public class CheckNumView extends RelativeLayout {
     /**
      * 初始化View
      *
-     * @param context 上下文
+     * @param context Context
      */
     @SuppressLint("ClickableViewAccessibility")
     private void initView(Context context) {
@@ -130,7 +128,7 @@ public class CheckNumView extends RelativeLayout {
             @Override
             public void onStop(int y) {
                 if (y != currentY) {
-                    // 判断滚动误差，不到行高的一半就抹掉，超过行高的一半而不到一个行高就填满
+                    //To judge the rolling error, erase less than half of the line height, fill more than half of the line height and less than one line height
                     if (y % WheelView.rowHeight >= (WheelView.rowHeight / 2)) {
                         y = y + WheelView.rowHeight - y % WheelView.rowHeight;
                         scrollView.scrollTo(0, y);

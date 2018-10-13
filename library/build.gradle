@@ -46,7 +46,7 @@ publish {
     userOrg = "felixzhong"//bintray.com用户名
     groupId = "com.felix"//jecenter上的路径
     artifactId = "wheelview"//项目名称
-    publishVersion = "0.0.1"//版本号
+    publishVersion = "1.0.0"//版本号
     desc = "日期选择器"//描述，不重要
     website = "https://github.com/chenjzcj/WheelView.git"//网站，不重要，眉题模拟github上面的，当然有最好了
     repoName = "felixRepo"//库的名称

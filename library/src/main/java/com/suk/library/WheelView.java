@@ -14,14 +14,11 @@ import android.widget.RelativeLayout;
 
 
 /**
- * 时间选择器控件
+ * Time selector control
  *
  * @author Felix.Zhong
  */
 public class WheelView extends RelativeLayout {
-    /**
-     * 默认年,月,日
-     */
     public static String[] DEFAULT_YEARS = {"2012", "2013", "2014", "2015", "2016", "2017", "2018", "2019", "2020", "2021", "2022", "2023", "2024", "2025"};
     public static String[] DEFAULT_MONTHS = {"01", "02", "03", "04", "05", "06", "07", "08", "09", "10", "11", "12"};
     public static String[] DEFAULT_DAYS = {
@@ -74,7 +71,7 @@ public class WheelView extends RelativeLayout {
 
     /**
      * 配置控件参数
-     * 1.每个Wheel代表一个选择项
+     * 1.Each Wheel represents a choice.
      * 2.Wheel中配置了相关选项参数
      *
      * @param wheels Wheel[]
@@ -140,7 +137,7 @@ public class WheelView extends RelativeLayout {
         /**
          * 确定按钮点击事件
          *
-         * @param values 选择器对应值数组
+         * @param values Selector corresponding value array
          */
         void onclick(String[] values);
     }
